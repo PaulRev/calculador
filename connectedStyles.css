@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  font-family: "Mulish", sans-serif;
+}
+body {
+  height: 100vh;
+  background: var(--colorY);
+}
+.stylesFlex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+:root {
+  --colorY: rgb(245, 177, 1);
+}

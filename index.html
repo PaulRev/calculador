@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CÁLCULADORA DE CÓCIENTE Y RESIDUO</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="connectedStyles.css" />
+    <link rel="icon" href="iconLogo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="contNumVisitas stylesFlex"></div>
+      <div class="header-Logo stylesFlex">
+        <img src="iconLogo.png" alt="" />
+      </div>
+    </header>
+    <main>
+      <div class="titleWeb stylesFlex">
+        <p>CÁLCULADORA DE CÓCIENTE Y RESIDUO</p>
+      </div>
+
+      <div class="contCalculator stylesFlex">
+        <input type="text" placeholder="  DIVIDENDO" id="Dividendo" />
+        <input type="text" placeholder="  DIVISOR" id="Divisor" />
+        <button id="Calcular">CALCULATE</button>
+
+        <div
+          class="calculatorResultado stylesFlex"
+          id="contenedorRespuesta"
+        ></div>
+      </div>
+    </main>
+    <footer></footer>
+    <script src="index.js"></script>
+  </body>
+</html>

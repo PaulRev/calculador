@@ -1,0 +1,95 @@
+header {
+  background: var(--colorY);
+  width: 100%;
+  display: flex;
+}
+.header-Logo {
+  width: 20%;
+  height: 70px;
+}
+.header-Logo img {
+  width: 40px;
+}
+/* <---main---> */
+main {
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.759), rgba(0, 0, 0, 0.696)),
+    url(imgfond.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.titleWeb {
+  width: 80%;
+  height: 100px;
+  font-size: 20px;
+  font-weight: 200;
+  color: white;
+  letter-spacing: 2px;
+  text-align: center;
+}
+.contCalculator {
+  width: 100%;
+  height: 500px;
+  background-color: rgba(0, 0, 0, 0.82);
+  flex-direction: column;
+  gap: 25px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+.contCalculator input {
+  width: 50%;
+  height: 50px;
+  background: rgb(240, 240, 240);
+  border: 5px;
+  border: none;
+  text-align: center;
+}
+.contCalculator button {
+  width: 55%;
+  height: 60px;
+  cursor: pointer;
+  border-radius: 20px;
+  border: none;
+  background: var(--colorY);
+  font-weight: bold;
+  font-size: 18px;
+}
+.calculatorResultado {
+  width: 60%;
+  height: 100px;
+  background: rgb(240, 240, 240);
+  border-radius: 5px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+/*Animación a llamar con 'JS cuando se muestre él calcule el resultado*/
+.contenedorRespuestaMOVER {
+  animation: moviContRespuesta 2s;
+}
+@keyframes moviContRespuesta {
+  50% {
+    rotate: 5deg;
+  }
+}
+
+footer {
+  width: 100%;
+  height: 20px;
+  background: var(--colorY);
+  box-shadow: 0px 0px 10px rgb(0, 0, 0);
+}
+
+/* Responsive: ==> */
+@media (width >= 600px) {
+  main{
+    height: 100vh;
+  }
+  .contCalculator {
+    height: 800px;
+    width: 500px;
+    }
+}
